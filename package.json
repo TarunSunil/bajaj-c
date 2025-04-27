@@ -2,14 +2,16 @@
   "name": "doctor-listing",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://TarunSunil.github.io/bajaj-c",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build",           
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",                   
+    "deploy": "gh-pages -d out"                   
   },
   "dependencies": {
-    "@next/swc-win32-x64-msvc": "^15.3.1",
     "axios": "^1.6.7",
     "clsx": "^2.1.0",
     "next": "14.1.0",
@@ -25,6 +27,7 @@
     "autoprefixer": "^10.4.17",
     "eslint": "^8.56.0",
     "eslint-config-next": "14.1.0",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.33",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"
